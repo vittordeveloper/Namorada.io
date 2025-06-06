@@ -1,0 +1,225 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #1a1a1a, #000);
+  color: white;
+  text-align: center;
+  padding: 0;
+}
+
+/* INÍCIO */
+.inicio {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background: url('eu.jpg') center center no-repeat;
+  background-size: cover;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.8);
+}
+
+.inicio h1 {
+  font-size: 2rem;
+  color: #e0ccff;
+  margin-bottom: 2rem;
+}
+
+.inicio button {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border: none;
+  background-color: #b266ff;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.inicio button:hover {
+  background-color: #9933ff;
+}
+
+/* CONTEÚDO */
+.conteudo {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  color: #e0ccff;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+}
+
+.video-fundo {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  object-fit: cover;
+  filter: brightness(0.4);
+}
+
+.conteudo-principal {
+  position: relative;
+  padding: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* GALERIA */
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+  justify-items: center;
+  margin-bottom: 2rem;
+}
+
+.galeria img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(178, 102, 255, 0.4);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.galeria img:hover {
+  transform: scale(1.05);
+}
+
+/* MENSAGENS */
+.mensagens {
+  margin: 2rem 0;
+}
+
+.mensagens p {
+  font-size: 1.4rem;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1rem;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.mensagens button {
+  margin-top: 1rem;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  background: #9933ff;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* FINAL */
+.final {
+  margin: 2rem 0;
+}
+
+.final button {
+  padding: 1rem 2rem;
+  background: #b266ff;
+  color: white;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.carta {
+  display: none;
+  margin-top: 1rem;
+  background: #2c003e;
+  padding: 1.5rem;
+  border-radius: 15px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+  color: #f4e6ff;
+}
+
+/* MODAL */
+.modal-galeria {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(10, 0, 15, 0.9);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-galeria img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(178, 102, 255, 0.5);
+}
+
+.pedido {
+  margin-top: 3rem;
+  text-align: center;
+  position: relative;
+}
+
+.gif-casamento {
+  max-width: 300px;
+  border-radius: 15px;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 15px rgba(178, 102, 255, 0.4);
+}
+
+.pedido h2 {
+  color: #e0ccff;
+  margin-bottom: 1.5rem;
+}
+
+.botoes-pedido {
+  position: relative;
+  height: 200px;
+}
+
+.botoes-pedido button {
+  padding: 0.8rem 1.6rem;
+  font-size: 1rem;
+  margin: 0.5rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+  position: relative;
+}
+
+.botoes-pedido button:first-child {
+  background-color: #9933ff;
+  color: white;
+}
+
+.botoes-pedido button:first-child:hover {
+  background-color: #b266ff;
+}
+
+#botaoNao {
+  background-color: #444;
+  color: #fff;
+}
+
+#botaoNao:hover {
+  background-color: #666;
+}
+
+#mensagem-marlon {
+  font-size: 1.2rem;
+  text-shadow: 2px 2px 4px black;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Para Você 💖</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="inicio" id="inicio">
+    <h1>Pra minha pessoa favorita nesse mundo, do seu futuro esposo com amor..</h1>
+    <button onclick="iniciarSite()">Aqui novinha (clica)</button>
+  </div>
+
+  <audio id="musica" src="julietmusic.mp3" loop></audio>
+
+  <div class="conteudo" id="conteudo" style="display: none;">
+    <video autoplay muted loop playsinline class="video-fundo">
+      <source src="novinha.mp4" type="video/mp4" />
+      Seu navegador não suporta vídeo de fundo.
+    </video>
+
+    <div class="conteudo-principal">
+
+      <div id="contador-dias"></div>
+
+      <section class="galeria">
+        <div class="foto"><img src="voce.jpg" alt="Foto 1" onclick="abrirModal(this)"></div>
+        <div class="foto"><img src="momento.jpg" alt="Foto 2" onclick="abrirModal(this)"></div>
+        <div class="foto"><img src="com.jpg" alt="Foto 3" onclick="abrirModal(this)"></div>
+        <div class="foto"><img src="vocce.jpg" alt="Foto 4" onclick="abrirModal(this)"></div>
+      </section>
+
+      <section class="mensagens">
+        <p id="mensagem"></p>
+        <button onclick="mostrarProximaMensagem()">(clica)</button>
+      </section>
+
+      <section class="pedido">
+  <img src="stitch.gif" alt="Pedido de casamento" class="gif-casamento">
+
+  <h2>Quer casar comigo? 💍</h2>
+
+  <div class="botoes-pedido">
+    <button onclick="responderSim()">Sim</button>
+    <button id="botaoNao" onclick="responderNao()">Não</button>
+    <p id="mensagem-marlon" style="display: none; margin-top: 1rem; color: #ff99cc; font-weight: bold;">
+  Não tem escolha
+</p>
+
+  </div>
+</section>
+    </div>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
