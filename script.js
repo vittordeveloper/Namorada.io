@@ -94,10 +94,10 @@ function fecharModal() {
 // Contador regressivo (exemplo: tempo juntos desde data X)
 function iniciarContador() {
   const contador = document.getElementById('contador-dias');
-  
+
   // Data do começo do relacionamento (ano, mês-1, dia)
   const dataInicio = new Date(2025, 4, 5); // Exemplo: 5 de Maio de 2025
-  
+
   function atualizarContador() {
     const agora = new Date();
     const diffMs = agora - dataInicio;
@@ -110,7 +110,7 @@ function iniciarContador() {
     const diasRestantes = dias % 30;
     contador.textContent = `Estamos juntos há ${meses} mês e ${diasRestantes} dias 💕`;
   }
-  
+
   atualizarContador();
   setInterval(atualizarContador, 60 * 1000); // Atualiza a cada minuto
 }
@@ -123,7 +123,6 @@ function responderNao() {
   const resposta = document.getElementById("mensagem-marlon");
   resposta.style.display = "block";
 }
-
 
 // Faz o botão fugir ao passar o mouse
 function fugir() {
@@ -138,4 +137,3 @@ function fugir() {
   botao.style.left = novaPosicaoX + "px";
   botao.style.top = novaPosicaoY + "px";
 }
-
