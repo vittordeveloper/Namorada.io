@@ -1,17 +1,16 @@
 const mensagens = [
   "Você sabia que.. ❤️",
   "Eu te amo mais a cada dia que passa?",
-  "Eu quero casar com você",
-  "Vamos ter 7 filhos",
+  "Você é o meu porto seguro",
+  "Ainda vamos ter 7 filhos",
   "Uma casa enorme",
   "Um quintal",
   "Um carro",
   "Quantos animais você quiser",
-  "Vamos viajar pela frança",
-  "Tudo que VOCÊ quiser amor",
+  "Farei tudo que você quiser meu amor...",
+  "Tudo que VOCÊ quiser",
   "eu te amo.",
   "Obrigado por tudo princesa",
-  "Te amo um milhão de vezes",
 ];
 
 let indiceMensagem = 0;
