@@ -223,3 +223,52 @@ body {
   font-size: 1.2rem;
   text-shadow: 2px 2px 4px black;
 }
+/* GALERIA EM SLIDER HORIZONTAL */
+.galeria-slider {
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 1rem 0;
+  margin-bottom: 2rem;
+}
+
+.slider {
+  display: flex;
+  gap: 15px;
+  padding: 0 1rem;
+}
+
+.slider img {
+  width: 250px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(178, 102, 255, 0.5);
+  transition: transform 0.3s;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.slider img:hover {
+  transform: scale(1.05);
+}
+#contador-dias {
+  font-size: 2rem;
+  color: #ffccff;
+  margin: 2rem auto;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid #ff99cc;
+  border-radius: 20px;
+  padding: 1rem 2rem;
+  width: fit-content;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 20px rgba(255, 153, 255, 0.3);
+  animation: brilho 2s infinite alternate;
+}
+
+@keyframes brilho {
+  from {
+    box-shadow: 0 0 10px rgba(255, 153, 255, 0.2);
+  }
+  to {
+    box-shadow: 0 0 25px rgba(255, 153, 255, 0.6);
+  }
+}
