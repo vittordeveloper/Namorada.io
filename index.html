@@ -24,31 +24,27 @@
 
       <div id="contador-dias"></div>
 
-
       <section class="mensagens">
         <p id="mensagem"></p>
         <button onclick="mostrarProximaMensagem()">(clica)</button>
       </section>
 
       <section class="pedido">
-  <img src="stitch.gif" alt="Pedido de casamento" class="gif-casamento">
+        <img src="stitch.gif" alt="Pedido de casamento" class="gif-casamento">
 
-  <h2>Quer casar comigo? 💍</h2>
+        <h2>Quer casar comigo? 💍</h2>
 
-  <div class="botoes-pedido">
-    <button onclick="responderSim()">Sim</button>
-    <button id="botaoNao" onclick="responderNao()">Não</button>
-    <p id="mensagem-marlon" style="display: none; margin-top: 1rem; color: #ff99cc; font-weight: bold;">
-  Não tem escolha
-</p>
-
-  </div>
-</section>
+        <div class="botoes-pedido">
+          <button onclick="responderSim()">Sim</button>
+          <button id="botaoNao" onclick="responderNao()" onmouseover="fugir()">Não</button>
+          <p id="mensagem-marlon" style="display: none; margin-top: 1rem; color: #ff99cc; font-weight: bold;">
+            Não tem escolha
+          </p>
+        </div>
+      </section>
     </div>
   </div>
-
 
   <script src="script.js"></script>
 </body>
 </html>
-
