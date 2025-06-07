@@ -117,7 +117,7 @@ function iniciarContador() {
 }
 
 function responderSim() {
-  window.location.href = "https://wa.me/5515998038280?text=Sim,%20eu%20aceito%20casar%20contigo%20";
+  window.location.href = "https://wa.me/5515998038280?text=Sim,%20eu%20aceito%20casar%20contigo%20😍";
 }
 
 function responderNao() {
@@ -139,3 +139,4 @@ function fugir() {
   botao.style.left = novaPosicaoX + "px";
   botao.style.top = novaPosicaoY + "px";
 }
+
